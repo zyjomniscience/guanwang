@@ -21,7 +21,10 @@ Route::get(':v/getScenery','index/:v.Banner/getScenery');
 //获取token
 //Route::post('getToken','index/v1.Token/getToken');
 //获取名人信息
-Route::get(':v/getFamous','index/:v.Famous/getFamous');
+Route::get(':v/getFamous','index/:v.Famous/getFamous')
+    ->allowCrossDomain();
+//测试
+Route::get(':v/test','index/:v.test');
 
 //获取学校信息
 return [
