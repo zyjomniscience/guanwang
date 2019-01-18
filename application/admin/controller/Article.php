@@ -10,6 +10,7 @@ namespace app\admin\controller;
 
 use app\common\model\AdmissionInfo;
 use app\common\model\AdmissionPic;
+use think\Controller;
 use think\facade\Request;
 
 class Article extends Controller

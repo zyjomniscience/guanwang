@@ -27,6 +27,8 @@ Route::get(':v/getFamous','index/:v.Famous/getFamous')
 Route::get(':v/test','index/:v.test');
 
 //获取学校信息
+Route::get(':v/getSchoolInfo','index/:v.SchoolInfo/getSchoolInfo')
+    ->allowCrossDomain();
 return [
 
 ];

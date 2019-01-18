@@ -15,11 +15,11 @@ class Banner extends Controller
 {
     public static function getBanner(){
         $banner=BannerModel::where('type','=',0)->select();
-        return json_encode($banner);
+        return json($banner);
     }
 
     public static function getScenery(){
         $banner=BannerModel::where('type','=',1)->select();
-        return json_encode($banner);
+        return json($banner);
     }
 }
